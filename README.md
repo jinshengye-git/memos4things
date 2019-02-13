@@ -401,8 +401,13 @@ rosdep install --from-paths src --ignore-src --rosdistro kinetic -y
 sudo apt install ros-kinetic-kobuki-msgs
 ```
 
+
 Here we do not need to catkin_make, because ```rosdep install --from-paths src --ignore-src --rosdistro kinetic -y``` will install ros-kinetic-rtabmap, this should be removed, we need compile rtabmap in next step by ourself.
-so you can continue to next step.
+so you can continue to next step.  
+
+for the zed-ros-wrapper folder, it must copy from other keycart like (222, 223, 224), current github version has bugs.
+
+
 
 - install Rtabmap / Rtabmap_ros on TX2  
 BEFORE INSTALL ```git checkout 0.18.1``` is necessary.
