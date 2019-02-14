@@ -5,7 +5,7 @@ workstation PC: basically it means your PC at hand.
 TX2 PC / TX2: it means the mini PC on TX2.  
 eMMC: hardisk on TX2 about 30GB...  
 
-## Flash Jetson TX2
+## Flash Jetson TX2 / TX1 
 - download and run **JetPack-L4T-3.3-linux-x64_b39.run**
  Link :  [https://developer.nvidia.com/embedded/dlc/jetpack-l4t-3_3](https://developer.nvidia.com/embedded/dlc/jetpack-l4t-3_3)
 
@@ -24,13 +24,16 @@ User will see some gui like the following
 
 *WARNING!!!  JETSON MUST BE LAN CABLED WITH THE NET， OTHERWISE， CUDA etc WILL NOT BE INSTALLED......*
 
-*HOWEVER*, If you forget the lan cable, it also could be fixed by runing ```./JetPack-L4T-3.3-linux-x64_b39.run``` and you can sellect not to flash Jetson only to install CUDA kit....
+*HOWEVER*, If you forget the lan cable, it also could be fixed by runing  
 
-during the install , in my case I chose *wireless network*
-and a pop-up Xterms window will instruct you to put your Jetson into Force USB Recovery Mode
+```
+./JetPack-L4T-3.3-linux-x64_b39.run
+```  
+
+and you can sellect not to flash Jetson only to install CUDA kit. During the installation , in my case I chose *wireless network* on my HOST PC, and a pop-up Xterms window will instruct you to put your Jetson into Force USB Recovery Mode
 so you can flash your OS by doing what it requests.
 
-*You must set the same net work with host and TX2. ( because we used mesh wifi (white router) and access point (black router), we currently use the white router for Host PC so lan cable must be connect with whiter router. )*
+*WARNING!!! You must set the same net work with host and TX2. ( because we used mesh wifi (white router) and access point (black router), we currently use the white router for Host PC so lan cable must be connect with whiter router. )*
 
 1. Power down the device. remove the AC adaptor from Jetson. Jetson must be Power off.
 2. Connect the Micro-B plug on the USB cable on the Jetson and your workstation PC.
@@ -40,12 +43,12 @@ so you can flash your OS by doing what it requests.
 5. When jetson is in recovery mode, lsusb command on workstation PC will list a line of
    "NVidia Corp"
 
-After a while, ubuntu 16.04 will be installed on Jetson TX2.
+After a while, ubuntu 16.04 will be installed on Jetson TX2. If everything set well, CUDA9.0, cuDNN, and OpenCV 3.3.1-dev will be installed on TX2 as well.
 
+*in order to ssh connect Jetson easier, a static IP setting is highly recommended*
 
-
-*in order to ssh connect Jetson easier, a static IP setting is recommended*
 - Set about the Static IP address:
+on TX2 
   Edit Connections-->IPV4 Settings-->Method:manual-->Address:192.168.xx.xxx-->Netmask:24-->GateWay:192.168.11.1-->DNS servers:8.8.8.8
 
 
