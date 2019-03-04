@@ -132,7 +132,7 @@ $ sudo apt install device-tree-compiler
 $ cd /boot/dtb/
 $ sudo dtc -I fs -O dts -o extracted_proc.dts /proc/device-tree
 ```
-3. Ensure the following patch is present  
+3. check _extracted_proc.dts_, Ensure the following patch is present  
 ```
    spi@3240000{
        compatible = "nvidia,tegra186-spi";
@@ -180,33 +180,33 @@ eg. /dev/spidev3.0
 ```$ sudo vi /usr/local/bin/usb_restart.sh```
 ```
 -->
-   #!/bin/bash
-   sleep 10
-   echo "Exporting gpio"
-   echo 349 > /sys/class/gpio/export
-   echo "GPIO 349 exported"
-   sleep 1
-   echo "turning OFF USB"
-   echo out > /sys/class/gpio/gpio349/direction && echo 0  > /sys/class/gpio/gpio349/value
-   echo "USB OFF"
-   sleep 5
-   echo "turning ON USB"
-   echo out > /sys/class/gpio/gpio349/direction && echo 1  > /sys/class/gpio/gpio349/value
-   echo "USB ON"
-   exit
+#!/bin/bash
+sleep 10
+echo "Exporting gpio"
+echo 349 > /sys/class/gpio/export
+echo "GPIO 349 exported"
+sleep 1
+echo "turning OFF USB"
+echo out > /sys/class/gpio/gpio349/direction && echo 0  > /sys/class/gpio/gpio349/value
+echo "USB OFF"
+sleep 5
+echo "turning ON USB"
+echo out > /sys/class/gpio/gpio349/direction && echo 1  > /sys/class/gpio/gpio349/value
+echo "USB ON"
+exit
 <--
 ```
 2. Add the right permissions  
 ```$ sudo chmod 744 /usr/local/bin/usb_restart.sh```
 3. Create the service file on /etc/systemd/system/usbRestart.service  
-```$ sudo nano /etc/systemd/system/usbRestart.service```
+```$ sudo vi /etc/systemd/system/usbRestart.service```
 ```
 -->
-   [Service]
-   ExecStart=/usr/local/bin/usb_restart.sh
+[Service]
+ExecStart=/usr/local/bin/usb_restart.sh
 
-   [Install]
-   WantedBy=default.target
+[Install]
+WantedBy=default.target
 <--
 ```
 4. Add the right permissions to the service file  
@@ -223,11 +223,6 @@ eg. /dev/spidev3.0
 
 1. To format the SSD disk to EXT4 format. 
 Use ubuntu OS application: *Disks*
-
-
-
-
-
 
 
 2. Copy eMMC to SSD
@@ -287,6 +282,9 @@ Then reboot your TX2
 sudo shutdown -r now
 ```
 
+And the TX2 will boot up with the ssd disk not the origin internal SD card on Jetson TX2.
+
+
 ## [Install OPenCV 3.4 for TX2](https://www.jetsonhacks.com/2017/04/05/build-opencv-nvidia-jetson-tx2/)
 
 - Install OpenCV 3.4 for TX2
@@ -337,11 +335,69 @@ time cmake -D CMAKE_BUILD_TYPE=RELEASE \
 previous version I set as ```-D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules \```
 however, there will be errors like ```C++11 is not supported......```
 
-Then run the script:
+Then run the script: (it may request the root passwd)
 
 ```
 ./buildOpenCV.sh
 cd ..
+```
+
+**OR**
+
+If you want to manually compile the source do like this: open a terminal and we suppose you got the s
+
+
+```bash
+cd ~
+#get opencv source code
+git clone https://github.com/opencv/opencv.git
+cd opencv
+git checkout 3.4.1
+mkdir build
+cd ..
+#get opencv_contrib
+git clone https://github.com/opencv/opencv_contrib.git
+cd opencv_contrib
+git checkout 3.4.1
+cd ..
+
+cd ~/opencv/build
+
+# Jetson TX2
+ARCH_BIN=6.2
+# Jetson TX1
+# ARCH_BIN=5.3
+INSTALL_DIR=/usr/local
+# Download the opencv_extras repository
+# If you are installing the opencv testdata, ie
+#  OPENCV_TEST_DATA_PATH=../opencv_extra/testdata
+# Make sure that you set this to YES
+# Value should be YES or NO
+DOWNLOAD_OPENCV_EXTRAS=NO
+# Source code directory
+OPENCV_SOURCE_DIR=$HOME
+WHEREAMI=$PWD
+CLEANUP=true
+CMAKE_INSTALL_PREFIX=$INSTALL_DIR
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+      -D CMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX} \
+      -D WITH_CUDA=ON \
+      -D CUDA_ARCH_BIN=${ARCH_BIN} \
+      -D CUDA_ARCH_PTX="" \
+      -D ENABLE_FAST_MATH=ON \
+      -D CUDA_FAST_MATH=ON \
+      -D WITH_CUBLAS=ON \
+      -D WITH_LIBV4L=ON \
+      -D WITH_GSTREAMER=ON \
+      -D WITH_GSTREAMER_0_10=OFF \
+      -D WITH_QT=ON \
+      -D WITH_OPENGL=ON \
+      -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
+      ../
+
+make
+sudo make install
 ```
 
 ## Install ZED camera SDK
