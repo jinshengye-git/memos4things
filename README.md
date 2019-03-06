@@ -72,7 +72,7 @@ $ ./getKernelSources.sh
 ```
 the process will stop when it goes to scripts/kconfig/qconf Kconfig; click " F " like button then click " I I "like button , then the window will be devided into 2 columns.  
 
-```USB support --> USB Serial Converter support --> USB Serial Simple Driver (check then save then close the window.)```
+```(left column) USB support [✓] --> (left column) USB Serial Converter support[・] --> (right column) USB Generic Serial Driver [✓] --> (right column) USB Serial Simple Driver [・] --> Save```
 
 
 
