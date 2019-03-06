@@ -1,4 +1,4 @@
-# compile and install Rtabmap / rtabmap_ros
+# compile and install Rtabmap / rtabmap_ros  
 
 ```bash
 echo 'install dependencies'
@@ -33,9 +33,9 @@ sudo makeinstall
 ```
 
 
-after `sudo make install` g2o
+after `sudo make install` g2o  
 
-run
+run  
 
 ```bash
 cd /opt/ros/melodic/lib 
@@ -72,14 +72,14 @@ sudo rm libg2o_types_slam3d.so; sudo ln /usr/local/lib/libg2o_types_slam3d.so li
 
 
 
-when `make` the rtabmap it might be shown some ERROR saids: can not find `....g2o/g2o/solvers/linear_solver_eigen.h`
-try to find it from g2o source code folder (from github)
+when `make` the rtabmap it might be shown some ERROR saids: can not find `....g2o/g2o/solvers/linear_solver_eigen.h`  
+try to find it from g2o source code folder (from github)  
 ```bash
-sudo cp -r /ssd1tb/home/nvidia/app/g2o/g2o/solvers/eigen /usr/local/include/g2o/solvers
+sudo cp -r /ssd1tb/home/nvidia/app/g2o/g2o/solvers/eigen /usr/local/include/g2o/solvers  
 ```
 
 
-try to compile and install rtabmap:
+try to compile and install rtabmap:  
 ```
 cd ~
 git clone https://github.com/introlab/rtabmap.git rtabmap
@@ -95,10 +95,10 @@ catkin_make -j1
 ```
 
 
-### about ROS `catkin_make`
+### about ROS `catkin_make`  
 
-when I tried to `catkin_make`
-it saids 
+when I tried to `catkin_make`  
+it saids   
 
 ```bash
 CMake Error at /opt/ros/melodic/share/cv_bridge/cmake/cv_bridgeConfig.cmake:113 (message):
@@ -115,18 +115,18 @@ and
  
 ```
 
-run
+run  
 
 ```bash
 sudo ln -s /usr/local/include/opencv /usr/include/opencv
 sudo ln -s /usr/local/lib/libopencv_core.so.3.4.1 /usr/lib/aarch64-linux-gnu/libopencv_core.so.3.2.0
 ```
 
-then `catkin_make` again it goes fine.
+then `catkin_make` again it goes fine.  
 
-### about logiler packages:
+### about logiler packages:  
 
-first run:
+first run:  
 
 ```
 roscd
@@ -134,7 +134,7 @@ cd ..
 rosdep install -r -y --from-paths src --ignore-src
 ```
 
-Then do `catkin_make` you will find _not found_ packages. we have to find them mainly from github.
+Then do `catkin_make` you will find _not found_ packages. we have to find them mainly from github.  
 
 
 ```bash
