@@ -39,33 +39,33 @@ run
 
 ```bash
 cd /opt/ros/melodic/lib 
-sudo rm libg2o_cli.so; sudo ln /usr/local/lib/libg2o_cli.so ;
-sudo rm libg2o_core.so; sudo ln /usr/local/lib/libg2o_core.so ;
-sudo rm libg2o_csparse_extension.so; sudo ln /usr/local/lib/libg2o_csparse_extension.so ;
-sudo rm libg2o_ext_freeglut_minimal.so; sudo ln /usr/local/lib/libg2o_ext_freeglut_minimal.so ;
-sudo rm libg2o_incremental.so; sudo ln /usr/local/lib/libg2o_incremental.so ;
-sudo rm libg2o_interactive.so; sudo ln /usr/local/lib/libg2o_interactive.so ;
-sudo rm libg2o_interface.so; sudo ln /usr/local/lib/libg2o_interface.so ;
-sudo rm libg2o_opengl_helper.so; sudo ln /usr/local/lib/libg2o_opengl_helper.so ;
-sudo rm libg2o_parser.so; sudo ln /usr/local/lib/libg2o_parser.so ;
-sudo rm libg2o_simulator.so; sudo ln /usr/local/lib/libg2o_simulator.so ;
-sudo rm libg2o_solver_cholmod.so; sudo ln /usr/local/lib/libg2o_solver_cholmod.so ;
-sudo rm libg2o_solver_csparse.so; sudo ln /usr/local/lib/libg2o_solver_csparse.so ;
-sudo rm libg2o_solver_dense.so; sudo ln /usr/local/lib/libg2o_solver_dense.so ;
-sudo rm libg2o_solver_eigen.so; sudo ln /usr/local/lib/libg2o_solver_eigen.so ;
-sudo rm libg2o_solver_pcg.so; sudo ln /usr/local/lib/libg2o_solver_pcg.so ;
-sudo rm libg2o_solver_slam2d_linear.so; sudo ln /usr/local/lib/libg2o_solver_slam2d_linear.so ;
-sudo rm libg2o_solver_structure_only.so; sudo ln /usr/local/lib/libg2o_solver_structure_only.so ;
-sudo rm libg2o_stuff.so; sudo ln /usr/local/lib/libg2o_stuff.so ;
-sudo rm libg2o_types_data.so; sudo ln /usr/local/lib/libg2o_types_data.so ;
-sudo rm libg2o_types_icp.so; sudo ln /usr/local/lib/libg2o_types_icp.so ;
-sudo rm libg2o_types_sba.so; sudo ln /usr/local/lib/libg2o_types_sba.so ;
-sudo rm libg2o_types_sclam2d.so; sudo ln /usr/local/lib/libg2o_types_sclam2d.so ;
-sudo rm libg2o_types_sim3.so; sudo ln /usr/local/lib/libg2o_types_sim3.so;
-sudo rm libg2o_types_slam2d_addons.so; sudo ln /usr/local/lib/libg2o_types_slam2d_addons.so ;
-sudo rm libg2o_types_slam2d.so; sudo ln /usr/local/lib/libg2o_types_slam2d.so ;
-sudo rm libg2o_types_slam3d_addons.so; sudo ln /usr/local/lib/libg2o_types_slam3d_addons.so ;
-sudo rm libg2o_types_slam3d.so; sudo ln /usr/local/lib/libg2o_types_slam3d.so ;
+sudo rm libg2o_cli.so; sudo ln /usr/local/lib/libg2o_cli.so libg2o_cli.so;
+sudo rm libg2o_core.so; sudo ln /usr/local/lib/libg2o_core.so libg2o_core.so;
+sudo rm libg2o_csparse_extension.so; sudo ln /usr/local/lib/libg2o_csparse_extension.so libg2o_csparse_extension.so;
+sudo rm libg2o_ext_freeglut_minimal.so; sudo ln /usr/local/lib/libg2o_ext_freeglut_minimal.so libg2o_ext_freeglut_minimal.so;
+sudo rm libg2o_incremental.so; sudo ln /usr/local/lib/libg2o_incremental.so libg2o_incremental.so;
+sudo rm libg2o_interactive.so; sudo ln /usr/local/lib/libg2o_interactive.so libg2o_interactive.so;
+sudo rm libg2o_interface.so; sudo ln /usr/local/lib/libg2o_interface.so libg2o_interface.so;
+sudo rm libg2o_opengl_helper.so; sudo ln /usr/local/lib/libg2o_opengl_helper.so libg2o_opengl_helper.so;
+sudo rm libg2o_parser.so; sudo ln /usr/local/lib/libg2o_parser.so libg2o_parser.so;
+sudo rm libg2o_simulator.so; sudo ln /usr/local/lib/libg2o_simulator.so libg2o_simulator.so;
+sudo rm libg2o_solver_cholmod.so; sudo ln /usr/local/lib/libg2o_solver_cholmod.so libg2o_solver_cholmod.so;
+sudo rm libg2o_solver_csparse.so; sudo ln /usr/local/lib/libg2o_solver_csparse.so libg2o_solver_csparse.so;
+sudo rm libg2o_solver_dense.so; sudo ln /usr/local/lib/libg2o_solver_dense.so libg2o_solver_dense.so;
+sudo rm libg2o_solver_eigen.so; sudo ln /usr/local/lib/libg2o_solver_eigen.so libg2o_solver_eigen.so;
+sudo rm libg2o_solver_pcg.so; sudo ln /usr/local/lib/libg2o_solver_pcg.so libg2o_solver_pcg.so;
+sudo rm libg2o_solver_slam2d_linear.so; sudo ln /usr/local/lib/libg2o_solver_slam2d_linear.so libg2o_solver_slam2d_linear.so;
+sudo rm libg2o_solver_structure_only.so; sudo ln /usr/local/lib/libg2o_solver_structure_only.so libg2o_solver_structure_only.so;
+sudo rm libg2o_stuff.so; sudo ln /usr/local/lib/libg2o_stuff.so lib/libg2o_stuff.so;
+sudo rm libg2o_types_data.so; sudo ln /usr/local/lib/libg2o_types_data.so libg2o_types_data.so;
+sudo rm libg2o_types_icp.so; sudo ln /usr/local/lib/libg2o_types_icp.so libg2o_types_icp.so;
+sudo rm libg2o_types_sba.so; sudo ln /usr/local/lib/libg2o_types_sba.so libg2o_types_sba.so;
+sudo rm libg2o_types_sclam2d.so; sudo ln /usr/local/lib/libg2o_types_sclam2d.so libg2o_types_sclam2d.so;
+sudo rm libg2o_types_sim3.so; sudo ln /usr/local/lib/libg2o_types_sim3.so libg2o_types_sim3.so;
+sudo rm libg2o_types_slam2d_addons.so; sudo ln /usr/local/lib/libg2o_types_slam2d_addons.so libg2o_types_slam2d_addons.so;
+sudo rm libg2o_types_slam2d.so; sudo ln /usr/local/lib/libg2o_types_slam2d.so libg2o_types_slam2d.so;
+sudo rm libg2o_types_slam3d_addons.so; sudo ln /usr/local/lib/libg2o_types_slam3d_addons.so libg2o_types_slam3d_addons.so;
+sudo rm libg2o_types_slam3d.so; sudo ln /usr/local/lib/libg2o_types_slam3d.so libg2o_types_slam3d.so;
 ```
 
 
@@ -124,4 +124,40 @@ sudo ln -s /usr/local/lib/libopencv_core.so.3.4.1 /usr/lib/aarch64-linux-gnu/lib
 
 then `catkin_make` again it goes fine.
 
+### about logiler packages:
 
+first run:
+
+```
+roscd
+cd ..
+rosdep install -r -y --from-paths src --ignore-src
+```
+
+Then do `catkin_make` you will find _not found_ packages. we have to find them mainly from github.
+
+
+```bash
+roscd
+cd ../src
+git clone https://github.com/yujinrobot/yujin_ocs.git
+cd yujin_ocs
+git checkout release/0.8-melodic
+roscd
+rosdep install -r -y --from-paths src --ignore-src
+sudo apt install ros-melodic-kobuki-*
+
+sudo apt install ros-melodic-yujin-ocs
+sudo apt install ros-melodic-tf*
+git clone https://github.com/ros-planning/navigation.git
+cd navigation
+git reset --hard 8665d81a20a1ecd45811ac6195a9c0d1a472080b    <--according to https://github.com/paulbovbel/frontier_exploration/issues/38-->
+cd ..
+
+### teb_local_planner I installed from `sudo apt install ros-melodic-teb-local-planner` 
+### git clone https://github.com/rst-tu-dortmund/teb_local_planner.git
+### cd teb_local_planner
+### git checkout melodic-devel
+### cd ..
+### catkin_make -j1
+```
