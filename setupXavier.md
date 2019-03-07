@@ -21,7 +21,7 @@ sudo make install
 cd ~
 git clone https://github.com/RainerKuemmerle/g2o.git
 cd g2o/
-git checkout dynamic_vertex
+git checkout master
 sudo apt install libeigen3-dev
 sudo apt install libsuitesparse-dev qtdeclarative5-dev qt5-qmake
 sudo apt install libqglviewer-headers
@@ -29,7 +29,7 @@ mkdir build
 cd build
 cmake -DBUILD_WITH_MARCH_NATIVE=OFF ..
 make
-sudo makeinstall
+sudo make install
 ```
 
 
@@ -151,7 +151,7 @@ sudo apt install ros-melodic-yujin-ocs
 sudo apt install ros-melodic-tf*
 git clone https://github.com/ros-planning/navigation.git
 cd navigation
-git reset --hard 8665d81a20a1ecd45811ac6195a9c0d1a472080b    <--according to https://github.com/paulbovbel/frontier_exploration/issues/38-->
+git reset --hard 8665d81a20a1ecd45811ac6195a9c0d1a472080b    #<--according to https://github.com/paulbovbel/frontier_exploration/issues/38-->
 cd ..
 
 ### teb_local_planner I installed from `sudo apt install ros-melodic-teb-local-planner` 
@@ -159,5 +159,6 @@ cd ..
 ### cd teb_local_planner
 ### git checkout melodic-devel
 ### cd ..
-### catkin_make -j1
+### 
+catkin_make   # Xavier no need to -j1
 ```
