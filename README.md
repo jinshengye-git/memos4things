@@ -315,16 +315,19 @@ cd buildOpenCVTX2
 find out the cmake setting parts and replace with:
 
 ```
-time cmake -D CMAKE_BUILD_TYPE=RELEASE \
-      -D CMAKE_INSTALL_PREFIX=/usr/local \
-      -D INSTALL_C_EXAMPLES=ON \
-      -D INSTALL_PYTHON_EXAMPLES=ON \
-      -D WITH_TBB=ON \
-      -D WITH_V4L=ON \
-      -D WITH_QT=ON \
-      -D WITH_OPENGL=ON \
-      -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
-      -D BUILD_EXAMPLES=OFF ..
+time cmake \
+-D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D WITH_CUDA=ON \
+-D ENABLE_FAST_MATH=1 \
+-D CUDA_FAST_MATH=1 \
+-D WITH_CUBLAS=1 \
+-D INSTALL_C_EXAMPLES=ON \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules  \
+-D BUILD_SHARED_LIBS=ON \
+-D WITH_GTK=ON \
+-D BUILD_EXAMPLES=OFF ..  
 ```
 
 previous version I set as ```-D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules \```
@@ -375,21 +378,20 @@ WHEREAMI=$PWD
 CLEANUP=true
 CMAKE_INSTALL_PREFIX=$INSTALL_DIR
 
-cmake -D CMAKE_BUILD_TYPE=RELEASE \
-      -D CMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX} \
-      -D WITH_CUDA=ON \
-      -D CUDA_ARCH_BIN=${ARCH_BIN} \
-      -D CUDA_ARCH_PTX="" \
-      -D ENABLE_FAST_MATH=ON \
-      -D CUDA_FAST_MATH=ON \
-      -D WITH_CUBLAS=ON \
-      -D WITH_LIBV4L=ON \
-      -D WITH_GSTREAMER=ON \
-      -D WITH_GSTREAMER_0_10=OFF \
-      -D WITH_QT=ON \
-      -D WITH_OPENGL=ON \
-      -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
-      ../
+
+cmake \
+-D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_INSTALL_PREFIX=/usr/local \
+-D WITH_CUDA=ON \
+-D ENABLE_FAST_MATH=1 \
+-D CUDA_FAST_MATH=1 \
+-D WITH_CUBLAS=1 \
+-D INSTALL_C_EXAMPLES=ON \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules  \
+-D BUILD_SHARED_LIBS=ON \
+-D WITH_GTK=ON \
+-D BUILD_EXAMPLES=OFF ..  
 
 make
 sudo make install
