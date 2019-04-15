@@ -289,11 +289,12 @@ And the TX2 will boot up with the ssd disk not the origin internal SD card on Je
 
 - Install OpenCV 3.4 for TX2
 First download opencv_contrib
+If you want to enable markdetection of apriltags2, you have to install opencv 3.4.2 
 ```
 cd ~
 git clone https://github.com/opencv/opencv_contrib.git
 cd opencv_contrib
-git checkout 3.4.1
+git checkout 3.4.2 #for enable markdetection.
 cd ..
 ```
 and you should uninstall / remove the Opencv 3.3.1 installed by Jetson Pack 3.3
