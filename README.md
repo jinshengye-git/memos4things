@@ -292,6 +292,13 @@ First download opencv_contrib
 If you want to enable markdetection of apriltags2, you have to install opencv 3.4.2 
 ```
 cd ~
+#get opencv source code
+git clone https://github.com/opencv/opencv.git
+cd opencv
+git checkout 3.4.2 #for enable markdetection.
+mkdir build
+cd ..
+cd ~
 git clone https://github.com/opencv/opencv_contrib.git
 cd opencv_contrib
 git checkout 3.4.2 #for enable markdetection.
@@ -351,13 +358,13 @@ cd ~
 #get opencv source code
 git clone https://github.com/opencv/opencv.git
 cd opencv
-git checkout 3.4.1
+git checkout 3.4.1 # or 3.4.2  you decide
 mkdir build
 cd ..
 #get opencv_contrib
 git clone https://github.com/opencv/opencv_contrib.git
 cd opencv_contrib
-git checkout 3.4.1
+git checkout 3.4.1 # or 3.4.2  you decide
 cd ..
 
 cd ~/opencv/build
