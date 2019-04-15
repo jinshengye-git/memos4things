@@ -39,33 +39,33 @@ run
 
 ```bash
 cd /opt/ros/melodic/lib 
-sudo rm libg2o_cli.so; sudo ln /usr/local/lib/libg2o_cli.so libg2o_cli.so;
-sudo rm libg2o_core.so; sudo ln /usr/local/lib/libg2o_core.so libg2o_core.so;
-sudo rm libg2o_csparse_extension.so; sudo ln /usr/local/lib/libg2o_csparse_extension.so libg2o_csparse_extension.so;
-sudo rm libg2o_ext_freeglut_minimal.so; sudo ln /usr/local/lib/libg2o_ext_freeglut_minimal.so libg2o_ext_freeglut_minimal.so;
-sudo rm libg2o_incremental.so; sudo ln /usr/local/lib/libg2o_incremental.so libg2o_incremental.so;
-sudo rm libg2o_interactive.so; sudo ln /usr/local/lib/libg2o_interactive.so libg2o_interactive.so;
-sudo rm libg2o_interface.so; sudo ln /usr/local/lib/libg2o_interface.so libg2o_interface.so;
-sudo rm libg2o_opengl_helper.so; sudo ln /usr/local/lib/libg2o_opengl_helper.so libg2o_opengl_helper.so;
-sudo rm libg2o_parser.so; sudo ln /usr/local/lib/libg2o_parser.so libg2o_parser.so;
-sudo rm libg2o_simulator.so; sudo ln /usr/local/lib/libg2o_simulator.so libg2o_simulator.so;
-sudo rm libg2o_solver_cholmod.so; sudo ln /usr/local/lib/libg2o_solver_cholmod.so libg2o_solver_cholmod.so;
-sudo rm libg2o_solver_csparse.so; sudo ln /usr/local/lib/libg2o_solver_csparse.so libg2o_solver_csparse.so;
-sudo rm libg2o_solver_dense.so; sudo ln /usr/local/lib/libg2o_solver_dense.so libg2o_solver_dense.so;
-sudo rm libg2o_solver_eigen.so; sudo ln /usr/local/lib/libg2o_solver_eigen.so libg2o_solver_eigen.so;
-sudo rm libg2o_solver_pcg.so; sudo ln /usr/local/lib/libg2o_solver_pcg.so libg2o_solver_pcg.so;
-sudo rm libg2o_solver_slam2d_linear.so; sudo ln /usr/local/lib/libg2o_solver_slam2d_linear.so libg2o_solver_slam2d_linear.so;
-sudo rm libg2o_solver_structure_only.so; sudo ln /usr/local/lib/libg2o_solver_structure_only.so libg2o_solver_structure_only.so;
-sudo rm libg2o_stuff.so; sudo ln /usr/local/lib/libg2o_stuff.so lib/libg2o_stuff.so;
-sudo rm libg2o_types_data.so; sudo ln /usr/local/lib/libg2o_types_data.so libg2o_types_data.so;
-sudo rm libg2o_types_icp.so; sudo ln /usr/local/lib/libg2o_types_icp.so libg2o_types_icp.so;
-sudo rm libg2o_types_sba.so; sudo ln /usr/local/lib/libg2o_types_sba.so libg2o_types_sba.so;
-sudo rm libg2o_types_sclam2d.so; sudo ln /usr/local/lib/libg2o_types_sclam2d.so libg2o_types_sclam2d.so;
-sudo rm libg2o_types_sim3.so; sudo ln /usr/local/lib/libg2o_types_sim3.so libg2o_types_sim3.so;
-sudo rm libg2o_types_slam2d_addons.so; sudo ln /usr/local/lib/libg2o_types_slam2d_addons.so libg2o_types_slam2d_addons.so;
-sudo rm libg2o_types_slam2d.so; sudo ln /usr/local/lib/libg2o_types_slam2d.so libg2o_types_slam2d.so;
-sudo rm libg2o_types_slam3d_addons.so; sudo ln /usr/local/lib/libg2o_types_slam3d_addons.so libg2o_types_slam3d_addons.so;
-sudo rm libg2o_types_slam3d.so; sudo ln /usr/local/lib/libg2o_types_slam3d.so libg2o_types_slam3d.so;
+sudo rm libg2o_cli.so; sudo ln -s /usr/local/lib/libg2o_cli.so libg2o_cli.so;
+sudo rm libg2o_core.so; sudo ln -s /usr/local/lib/libg2o_core.so libg2o_core.so;
+sudo rm libg2o_csparse_extension.so; sudo ln -s /usr/local/lib/libg2o_csparse_extension.so libg2o_csparse_extension.so;
+sudo rm libg2o_ext_freeglut_minimal.so; sudo ln -s /usr/local/lib/libg2o_ext_freeglut_minimal.so libg2o_ext_freeglut_minimal.so;
+sudo rm libg2o_incremental.so; sudo ln -s /usr/local/lib/libg2o_incremental.so libg2o_incremental.so;
+sudo rm libg2o_interactive.so; sudo ln -s /usr/local/lib/libg2o_interactive.so libg2o_interactive.so;
+sudo rm libg2o_interface.so; sudo ln -s /usr/local/lib/libg2o_interface.so libg2o_interface.so;
+sudo rm libg2o_opengl_helper.so; sudo ln -s /usr/local/lib/libg2o_opengl_helper.so libg2o_opengl_helper.so;
+sudo rm libg2o_parser.so; sudo ln -s /usr/local/lib/libg2o_parser.so libg2o_parser.so;
+sudo rm libg2o_simulator.so; sudo ln -s /usr/local/lib/libg2o_simulator.so libg2o_simulator.so;
+sudo rm libg2o_solver_cholmod.so; sudo ln -s /usr/local/lib/libg2o_solver_cholmod.so libg2o_solver_cholmod.so;
+sudo rm libg2o_solver_csparse.so; sudo ln -s /usr/local/lib/libg2o_solver_csparse.so libg2o_solver_csparse.so;
+sudo rm libg2o_solver_dense.so; sudo ln -s /usr/local/lib/libg2o_solver_dense.so libg2o_solver_dense.so;
+sudo rm libg2o_solver_eigen.so; sudo ln -s /usr/local/lib/libg2o_solver_eigen.so libg2o_solver_eigen.so;
+sudo rm libg2o_solver_pcg.so; sudo ln -s /usr/local/lib/libg2o_solver_pcg.so libg2o_solver_pcg.so;
+sudo rm libg2o_solver_slam2d_linear.so; sudo ln -s /usr/local/lib/libg2o_solver_slam2d_linear.so libg2o_solver_slam2d_linear.so;
+sudo rm libg2o_solver_structure_only.so; sudo ln -s /usr/local/lib/libg2o_solver_structure_only.so libg2o_solver_structure_only.so;
+sudo rm libg2o_stuff.so; sudo ln -s /usr/local/lib/libg2o_stuff.so lib/libg2o_stuff.so;
+sudo rm libg2o_types_data.so; sudo ln -s /usr/local/lib/libg2o_types_data.so libg2o_types_data.so;
+sudo rm libg2o_types_icp.so; sudo ln -s /usr/local/lib/libg2o_types_icp.so libg2o_types_icp.so;
+sudo rm libg2o_types_sba.so; sudo ln -s /usr/local/lib/libg2o_types_sba.so libg2o_types_sba.so;
+sudo rm libg2o_types_sclam2d.so; sudo ln -s /usr/local/lib/libg2o_types_sclam2d.so libg2o_types_sclam2d.so;
+sudo rm libg2o_types_sim3.so; sudo ln -s /usr/local/lib/libg2o_types_sim3.so libg2o_types_sim3.so;
+sudo rm libg2o_types_slam2d_addons.so; sudo ln -s /usr/local/lib/libg2o_types_slam2d_addons.so libg2o_types_slam2d_addons.so;
+sudo rm libg2o_types_slam2d.so; sudo ln -s /usr/local/lib/libg2o_types_slam2d.so libg2o_types_slam2d.so;
+sudo rm libg2o_types_slam3d_addons.so; sudo ln -s /usr/local/lib/libg2o_types_slam3d_addons.so libg2o_types_slam3d_addons.so;
+sudo rm libg2o_types_slam3d.so; sudo ln -s /usr/local/lib/libg2o_types_slam3d.so libg2o_types_slam3d.so;
 ```
 
 
