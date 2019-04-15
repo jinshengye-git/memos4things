@@ -6,7 +6,19 @@ echo 'install dependencies'
 sudo apt-get install ros-melodic-rtabmap ros-melodic-rtabmap-ros
 sudo apt-get remove  ros-melodic-rtabmap ros-melodic-rtabmap-ros
 
-
+#install OpenCV 3.4.2 version..
+cd ~
+#get opencv source code
+git clone https://github.com/opencv/opencv.git
+cd opencv
+git checkout 3.4.2 #for enable markdetection.
+mkdir build
+cd ..
+cd ~
+git clone https://github.com/opencv/opencv_contrib.git
+cd opencv_contrib
+git checkout 3.4.2 #for enable markdetection.
+cd ..
 
 cd ~
 git clone https://bitbucket.org/gtborg/gtsam.git
