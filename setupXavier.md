@@ -68,7 +68,7 @@ sudo rm libg2o_solver_eigen.so; sudo ln -s /usr/local/lib/libg2o_solver_eigen.so
 sudo rm libg2o_solver_pcg.so; sudo ln -s /usr/local/lib/libg2o_solver_pcg.so libg2o_solver_pcg.so;
 sudo rm libg2o_solver_slam2d_linear.so; sudo ln -s /usr/local/lib/libg2o_solver_slam2d_linear.so libg2o_solver_slam2d_linear.so;
 sudo rm libg2o_solver_structure_only.so; sudo ln -s /usr/local/lib/libg2o_solver_structure_only.so libg2o_solver_structure_only.so;
-sudo rm libg2o_stuff.so; sudo ln -s /usr/local/lib/libg2o_stuff.so lib/libg2o_stuff.so;
+sudo rm libg2o_stuff.so; sudo ln -s /usr/local/lib/libg2o_stuff.so libg2o_stuff.so;
 sudo rm libg2o_types_data.so; sudo ln -s /usr/local/lib/libg2o_types_data.so libg2o_types_data.so;
 sudo rm libg2o_types_icp.so; sudo ln -s /usr/local/lib/libg2o_types_icp.so libg2o_types_icp.so;
 sudo rm libg2o_types_sba.so; sudo ln -s /usr/local/lib/libg2o_types_sba.so libg2o_types_sba.so;
