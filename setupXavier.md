@@ -26,7 +26,7 @@ cd gtsam/
 git checkout 4.0.0-alpha2
 mkdir build
 cd build
-cmake GTSAM_USE_SYSTEM_EIGEN=ON ..
+cmake -DGTSAM_USE_SYSTEM_EIGEN=ON ..
 make
 sudo make install
 
