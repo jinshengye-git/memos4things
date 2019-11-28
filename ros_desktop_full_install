@@ -1,0 +1,146 @@
+#!/bin/bash
+# this is for install ros_desktop_full without install ros version opencv
+
+sudo apt install -y binfmt-support blt bzip2-doc docutils-common docutils-doc fltk1.3-doc fluid fonts-lato fonts-lyx freeglut3-dev gazebo9 gazebo9-common
+sudo apt install -y gazebo9-plugin-base gir1.2-gtk-2.0 google-mock googletest graphviz hddtemp
+sudo apt install -y libann0 libapr1 libapr1-dev libaprutil1 libaprutil1-dev libassimp-dev
+sudo apt install -y libassimp4 libassuan-dev libavdevice-dev libavdevice57 libavfilter-dev
+sudo apt install -y libavresample-dev libbullet-dev libbullet2.87 libbz2-dev libccd-dev libccd2
+sudo apt install -y libcdt5 libcgraph6 libcharls1 libconsole-bridge-dev libconsole-bridge0.4
+sudo apt install -y libcurl4-openssl-dev libdc1394-22-dev libexif-dev libexif-doc
+sudo apt install -y libfltk-cairo1.3 libfltk-forms1.3 libfltk-gl1.3 libfltk-images1.3 libfltk1.3
+sudo apt install -y libfltk1.3-dev libfreeimage-dev libfreeimage3 libgazebo9 libgazebo9-dev
+sudo apt install -y libgdcm2-dev libgdcm2.8 libgpg-error-dev libgpgme-dev libgphoto2-dev
+sudo apt install -y libgraphviz-dev libgtest-dev libgtk2.0-dev libgts-0.7-5 libgts-bin
+sudo apt install -y libgts-dev libgvc6 libgvc6-plugins-gtk libgvpr2 libignition-cmake-dev
+sudo apt install -y libignition-common libignition-common-dev libignition-fuel-tools1-1
+sudo apt install -y libignition-fuel-tools1-dev libignition-math4 libignition-math4-dev
+sudo apt install -y libignition-msgs libignition-msgs-dev libignition-transport4
+sudo apt install -y libignition-transport4-dev libilmbase-dev libjs-jquery-ui libjxr0
+sudo apt install -y liblab-gamut1 liblapack-dev liblapack3 libldap2-dev liblept5 liblog4cxx-dev
+sudo apt install -y liblog4cxx10v5 liblz4-dev libogre-1.9-dev libogre-1.9.0v5 libopenal-dev
+sudo apt install -y libopenexr-dev libpathplan4 libpoco-dev libpococrypto50 libpocodata50 libpocodatamysql50
+sudo apt install -y libpocodataodbc50 libpocodatasqlite50 libpocofoundation50 libpocojson50
+sudo apt install -y libpocomongodb50 libpoconet50 libpoconetssl50 libpocoredis50 libpocoutil50
+sudo apt install -y libpocoxml50 libpocozip50 libpostproc-dev libprotobuf-dev libprotobuf-lite10
+sudo apt install -y libprotoc-dev libprotoc10 libqtpropertybrowser4 libqwt-headers libqwt-qt5-6
+sudo apt install -y libqwt-qt5-dev libraw1394-dev libraw1394-tools libruby2.5 libsctp-dev
+sudo apt install -y libsctp1 libsdformat6 libsdformat6-dev libsdl2-2.0-0 libsimbody-dev
+sudo apt install -y libsimbody3.5v5 libsocket++1 libspnav0 libssl-dev libtar-dev libtar0
+sudo apt install -y libtbb-dev libtbb2 libtesseract4 libtinyxml-dev libtinyxml2-6
+sudo apt install -y libtinyxml2-dev liburdfdom-dev liburdfdom-headers-dev liburdfdom-model
+sudo apt install -y liburdfdom-model-state liburdfdom-sensor liburdfdom-world libusb-1.0-0-dev
+sudo apt install -y libusb-1.0-doc libwxbase3.0-0v5 libwxgtk3.0-gtk3-0v5 libxdot4 libxml2-utils
+sudo apt install -y libxmu-dev libxmu-headers libyaml-dev libzip-dev libzip4 libzmq3-dev
+sudo apt install -y libzzip-0-13 protobuf-compiler pyqt5-dev python-backports.functools-lru-cache python-bs4 python-cairo
+sudo apt install -y python-catkin-pkg python-catkin-pkg-modules python-chardet python-crypto
+sudo apt install -y python-cycler python-dateutil python-defusedxml python-docutils python-empy
+sudo apt install -y python-gnupg python-html5lib python-lxml python-matplotlib
+sudo apt install -y python-matplotlib-data python-netifaces python-nose python-numpy python-opengl python-paramiko python-psutil python-pydot
+sudo apt install -y python-pygments python-pyparsing python-pyqt5 python-pyqt5.qtopengl
+sudo apt install -y python-pyqt5.qtsvg python-pyqt5.qtwebkit python-roman python-rosdep
+sudo apt install -y python-rosdistro python-rosdistro-modules python-rospkg
+sudo apt install -y python-rospkg-modules python-setuptools python-sip python-sip-dev
+sudo apt install -y python-subprocess32 python-tk python-tz python-webencodings python-wxgtk3.0
+sudo apt install -y python-wxtools python-wxversion python-yaml rake ros-melodic-actionlib
+sudo apt install -y ros-melodic-actionlib-msgs ros-melodic-actionlib-tutorials
+sudo apt install -y ros-melodic-angles ros-melodic-bond ros-melodic-bond-core
+sudo apt install -y ros-melodic-bondcpp ros-melodic-bondpy 
+sudo apt install -y ros-melodic-catkin ros-melodic-class-loader ros-melodic-cmake-modules
+sudo apt install -y ros-melodic-common-msgs ros-melodic-common-tutorials
+sudo apt install -y ros-melodic-compressed-depth-image-transport
+sudo apt install -y ros-melodic-compressed-image-transport ros-melodic-control-msgs
+sudo apt install -y ros-melodic-control-toolbox ros-melodic-controller-interface
+sudo apt install -y ros-melodic-controller-manager ros-melodic-controller-manager-msgs
+sudo apt install -y ros-melodic-cpp-common ros-melodic-depth-image-proc
+sudo apt install -y ros-melodic-desktop
+sudo apt install -y ros-melodic-diagnostic-aggregator ros-melodic-diagnostic-analysis
+sudo apt install -y ros-melodic-diagnostic-common-diagnostics ros-melodic-diagnostic-msgs
+sudo apt install -y ros-melodic-diagnostic-updater ros-melodic-diagnostics
+sudo apt install -y ros-melodic-diff-drive-controller ros-melodic-dynamic-reconfigure
+sudo apt install -y ros-melodic-eigen-conversions ros-melodic-executive-smach
+sudo apt install -y ros-melodic-filters ros-melodic-forward-command-controller
+sudo apt install -y ros-melodic-gazebo-dev ros-melodic-gazebo-msgs ros-melodic-gazebo-plugins
+sudo apt install -y ros-melodic-gazebo-ros ros-melodic-gazebo-ros-control
+sudo apt install -y ros-melodic-gazebo-ros-pkgs ros-melodic-gencpp ros-melodic-geneus
+sudo apt install -y ros-melodic-genlisp ros-melodic-genmsg ros-melodic-gennodejs
+sudo apt install -y ros-melodic-genpy ros-melodic-geometry ros-melodic-geometry-msgs
+sudo apt install -y ros-melodic-geometry-tutorials ros-melodic-gl-dependency
+sudo apt install -y ros-melodic-hardware-interface ros-melodic-image-common
+sudo apt install -y ros-melodic-image-geometry ros-melodic-image-pipeline ros-melodic-image-proc
+sudo apt install -y ros-melodic-image-publisher ros-melodic-image-rotate
+sudo apt install -y ros-melodic-image-transport ros-melodic-image-transport-plugins
+sudo apt install -y ros-melodic-image-view ros-melodic-interactive-marker-tutorials
+sudo apt install -y ros-melodic-interactive-markers ros-melodic-joint-limits-interface
+sudo apt install -y ros-melodic-joint-state-controller ros-melodic-joint-state-publisher
+sudo apt install -y ros-melodic-kdl-conversions ros-melodic-kdl-parser ros-melodic-kdl-parser-py
+sudo apt install -y ros-melodic-laser-assembler ros-melodic-laser-filters
+sudo apt install -y ros-melodic-laser-geometry ros-melodic-laser-pipeline
+sudo apt install -y ros-melodic-librviz-tutorial ros-melodic-map-msgs ros-melodic-media-export
+sudo apt install -y ros-melodic-message-filters ros-melodic-message-generation
+sudo apt install -y ros-melodic-message-runtime ros-melodic-mk ros-melodic-nav-msgs
+sudo apt install -y ros-melodic-nodelet ros-melodic-nodelet-core ros-melodic-nodelet-topic-tools
+sudo apt install -y ros-melodic-nodelet-tutorial-math ros-melodic-orocos-kdl
+sudo apt install -y ros-melodic-pcl-conversions ros-melodic-pcl-msgs ros-melodic-pcl-ros
+sudo apt install -y ros-melodic-perception ros-melodic-perception-pcl ros-melodic-pluginlib
+sudo apt install -y ros-melodic-pluginlib-tutorials ros-melodic-polled-camera
+sudo apt install -y ros-melodic-position-controllers ros-melodic-python-orocos-kdl
+sudo apt install -y ros-melodic-python-qt-binding ros-melodic-qt-dotgraph ros-melodic-qt-gui
+sudo apt install -y ros-melodic-qt-gui-cpp ros-melodic-qt-gui-py-common
+sudo apt install -y ros-melodic-qwt-dependency ros-melodic-realtime-tools
+sudo apt install -y ros-melodic-resource-retriever ros-melodic-robot
+sudo apt install -y ros-melodic-robot-state-publisher ros-melodic-ros ros-melodic-ros-base
+sudo apt install -y ros-melodic-ros-comm ros-melodic-ros-core ros-melodic-ros-environment
+sudo apt install -y ros-melodic-ros-tutorials ros-melodic-rosbag
+sudo apt install -y ros-melodic-rosbag-migration-rule ros-melodic-rosbag-storage
+sudo apt install -y ros-melodic-rosbash ros-melodic-rosboost-cfg ros-melodic-rosbuild
+sudo apt install -y ros-melodic-rosclean ros-melodic-rosconsole ros-melodic-rosconsole-bridge
+sudo apt install -y ros-melodic-roscpp ros-melodic-roscpp-core ros-melodic-roscpp-serialization
+sudo apt install -y ros-melodic-roscpp-traits ros-melodic-roscpp-tutorials ros-melodic-roscreate
+sudo apt install -y ros-melodic-rosgraph ros-melodic-rosgraph-msgs ros-melodic-roslang
+sudo apt install -y ros-melodic-roslaunch ros-melodic-roslib ros-melodic-roslint
+sudo apt install -y ros-melodic-roslisp ros-melodic-roslz4 ros-melodic-rosmake
+sudo apt install -y ros-melodic-rosmaster ros-melodic-rosmsg ros-melodic-rosnode
+sudo apt install -y ros-melodic-rosout ros-melodic-rospack ros-melodic-rosparam
+sudo apt install -y ros-melodic-rospy ros-melodic-rospy-tutorials ros-melodic-rosservice
+sudo apt install -y ros-melodic-rostest ros-melodic-rostime ros-melodic-rostopic
+sudo apt install -y ros-melodic-rosunit ros-melodic-roswtf ros-melodic-rqt-action
+sudo apt install -y ros-melodic-rqt-bag ros-melodic-rqt-bag-plugins
+sudo apt install -y ros-melodic-rqt-common-plugins ros-melodic-rqt-console ros-melodic-rqt-dep
+sudo apt install -y ros-melodic-rqt-graph ros-melodic-rqt-gui ros-melodic-rqt-gui-cpp
+sudo apt install -y ros-melodic-rqt-gui-py ros-melodic-rqt-image-view ros-melodic-rqt-launch
+sudo apt install -y ros-melodic-rqt-logger-level ros-melodic-rqt-moveit ros-melodic-rqt-msg
+sudo apt install -y ros-melodic-rqt-nav-view ros-melodic-rqt-plot ros-melodic-rqt-pose-view
+sudo apt install -y ros-melodic-rqt-publisher ros-melodic-rqt-py-common
+sudo apt install -y ros-melodic-rqt-py-console ros-melodic-rqt-reconfigure
+sudo apt install -y ros-melodic-rqt-robot-dashboard ros-melodic-rqt-robot-monitor
+sudo apt install -y ros-melodic-rqt-robot-plugins ros-melodic-rqt-robot-steering
+sudo apt install -y ros-melodic-rqt-runtime-monitor ros-melodic-rqt-rviz
+sudo apt install -y ros-melodic-rqt-service-caller ros-melodic-rqt-shell ros-melodic-rqt-srv
+sudo apt install -y ros-melodic-rqt-tf-tree ros-melodic-rqt-top ros-melodic-rqt-topic
+sudo apt install -y ros-melodic-rqt-web ros-melodic-rviz ros-melodic-rviz-plugin-tutorials
+sudo apt install -y ros-melodic-rviz-python-tutorial ros-melodic-self-test
+sudo apt install -y ros-melodic-sensor-msgs ros-melodic-shape-msgs ros-melodic-simulators
+sudo apt install -y ros-melodic-smach ros-melodic-smach-msgs ros-melodic-smach-ros
+sudo apt install -y ros-melodic-smclib ros-melodic-stage ros-melodic-stage-ros
+sudo apt install -y ros-melodic-std-msgs ros-melodic-std-srvs ros-melodic-stereo-image-proc
+sudo apt install -y ros-melodic-stereo-msgs ros-melodic-tf ros-melodic-tf-conversions
+sudo apt install -y ros-melodic-tf2 ros-melodic-tf2-eigen ros-melodic-tf2-geometry-msgs
+sudo apt install -y ros-melodic-tf2-kdl ros-melodic-tf2-msgs ros-melodic-tf2-py
+sudo apt install -y ros-melodic-tf2-ros ros-melodic-theora-image-transport
+sudo apt install -y ros-melodic-topic-tools ros-melodic-trajectory-msgs
+sudo apt install -y ros-melodic-transmission-interface ros-melodic-turtle-actionlib
+sudo apt install -y ros-melodic-turtle-tf ros-melodic-turtle-tf2 ros-melodic-turtlesim
+sudo apt install -y ros-melodic-urdf ros-melodic-urdf-parser-plugin
+sudo apt install -y ros-melodic-urdf-sim-tutorial ros-melodic-urdf-tutorial
+sudo apt install -y ros-melodic-urdfdom-py ros-melodic-visualization-marker-tutorials ros-melodic-visualization-msgs
+sudo apt install -y ros-melodic-visualization-tutorials ros-melodic-viz
+sudo apt install -y ros-melodic-webkit-dependency ros-melodic-xacro ros-melodic-xmlrpcpp ruby
+sudo apt install -y ruby-did-you-mean ruby-minitest ruby-net-telnet ruby-power-assert
+sudo apt install -y ruby-test-unit ruby2.5 rubygems-integration sbcl sdformat-sdf sgml-base
+sudo apt install -y sip-dev tango-icon-theme tk8.6-blt2.5 ttf-bitstream-vera ttf-dejavu-core
+sudo apt install -y xml-core
+
+
+
+
