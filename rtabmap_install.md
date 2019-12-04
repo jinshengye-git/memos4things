@@ -41,14 +41,13 @@ Make sure you have done:
 Make sure on the outputs of CMake-gui:
 
 OpenCV modules:
-    To be built:                 aruco bgsegm bioinspired calib3d ccalib core cudaarithm cudabgsegm cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping cudev **cvv** datasets dnn dnn_objdetect dpm face features2d flann freetype fuzzy hdf hfs highgui img_hash imgcodecs imgproc line_descriptor ml objdetect optflow phase_unwrapping photo plot python2 python3 reg rgbd saliency **sfm** shape stereo stitching structured_light superres surface_matching text tracking ts video videoio videostab viz xfeatures2d ximgproc xobjdetect xphoto
-
-    Disabled:                    cudacodec world
-    Disabled by dependency:      -
-    Unavailable:                 cnn_3dobj java js matlab ovis
-    Applications:                tests perf_tests apps
-    Documentation:               NO
-    Non-free algorithms:         NO
+    - To be built:                 aruco bgsegm bioinspired calib3d ccalib core cudaarithm cudabgsegm cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping cudev **cvv** datasets dnn dnn_objdetect dpm face features2d flann freetype fuzzy hdf hfs highgui img_hash imgcodecs imgproc line_descriptor ml objdetect optflow phase_unwrapping photo plot python2 python3 reg rgbd saliency **sfm** shape stereo stitching structured_light superres surface_matching text tracking ts video videoio videostab viz xfeatures2d ximgproc xobjdetect xphoto
+    - Disabled:                    cudacodec world
+    - Disabled by dependency:      -
+    - Unavailable:                 cnn_3dobj java js matlab ovis
+    - Applications:                tests perf_tests apps
+    - Documentation:               NO
+    - Non-free algorithms:         NO
 
 
 
