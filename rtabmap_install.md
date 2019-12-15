@@ -140,7 +140,10 @@ sudo make install
 cd ~
 git clone https://github.com/introlab/rtabmap.git
 cd ~/rtabmap/build
-cmake ..
+cmake -DCSPARSE_INCLUDE_DIR=/usr/local/include/g2o/EXTERNAL/csparse -DCSPARSE_LIBRARY=/usr/local/lib/libg2o_csparse_extension ..
 make -j12
 sudo make install
 ```
+
+
+
