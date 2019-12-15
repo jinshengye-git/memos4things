@@ -75,7 +75,7 @@ git clone https://github.com/RainerKuemmerle/g2o.git
 cd ~/g2o
 mkdir build
 cd build
-cmake -DBUILD_WITH_MARCH_NATIVE=OFF -DG2O_BUILD_APPS=OFF -DG2O_BUILD_EXAMPLES=ON -DG2O_USE_OPENGL=OFF ..
+cmake -DBUILD_WITH_MARCH_NATIVE=OFF -DBUILD_CSPARSE=ON -DG2O_BUILD_APPS=OFF -DG2O_BUILD_EXAMPLES=ON -DG2O_USE_OPENGL=OFF ..
 make -j12
 sudo make install
 ```
