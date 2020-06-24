@@ -1,5 +1,14 @@
 How to fix teb_local_planner install on HostPC
 
+
+```
+sudo apt install libsuitesparse-dev
+```
+
+make sure your g2o is from official, and cmake g2o with proper settings.
+
+
+
 go to teb_local_planner/
 
 edit CMakeLists.txt
